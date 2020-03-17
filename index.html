@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>
+      <a href="/">App-Title</a>
+    </h1>
+    <nav>
+      <ul>
+        <li>
+          <a href="#">
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>Info</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>Settings</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>About</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Paragraph</h2>
+      <p>Lorem ipsum dolor, sit amet <a href="#">consectetur</a> adipisicing elit. <small>Voluptates provident cumque voluptatum!</small> <br> Asperiores ratione porro voluptatem quasi commodi rerum et possimus temporibus, suscipit ab soluta ipsum inventore est, modi quod.</p>
+      <p>Lorem ipsum dolor, sit amet <strong>consectetur adipisicing</strong> elit. Voluptates <em>provident cumque voluptatum!</em> Asperiores ratione porro voluptatem quasi commodi rerum et possimus temporibus, suscipit ab soluta ipsum inventore est, modi quod.</p>
+    </section>
+    <section>
+      <h2>Lists</h2>
+      <h3>Unordered list</h3>
+      <ul>
+        <li>Orange</li>
+        <li>Apple</li>
+        <li>Rhubarb
+          <ul>
+            <li>One</li>
+            <li>Two</li>
+          </ul>
+        </li>
+        <li>Rasberry</li>
+        <li>Blueberry</li>
+        <li>Cherry</li>
+      </ul>
+      <hr>
+      <h3>Ordered list</h3>
+      <ol>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third
+          <ol>
+            <li>One</li>
+            <li>Two</li>
+          </ol>
+        </li>
+        <li>Fourth</li>
+        <li>Fifth</li>
+        <li>Sixth</li>
+      </ol>
+      <hr>
+      <h3>Definition list</h3>
+      <dl>
+        <dt>
+        Kick
+        </dt>
+        <dd>
+        808
+        </dd>
+        <dt>
+        Snare
+        </dt>
+        <dd>
+        909
+        </dd>
+      </dl>
+      <dl>
+        <dt> Maine </dt>
+        <dd> Augusta </dd>
+        <dt> California </dt>
+        <dd> Sacremento </dd>
+        <dt> Oregon </dt>
+        <dd> Salem </dd>
+        <dt> New York </dt>
+        <dd> Albany </dd>
+      </dl>
+      <dl>
+        <dt> Ascender </dt>
+        <dd> The part of certain lowercase letters that extends above the x-height of a font.  </dd>
+        <dt> Font </dt>
+        <dd> Traditionally, a complete set of characters for one typeface at
+        one particular type size. Often used more loosely as a synonym for
+        "typeface".
+        </dd>
+        <dt> Golden Section </dt>
+        <dd>
+        The ideal proportion according to the ancient Greeks. It is visualized as the
+        division of a line into two unequal segments in such a way that the ratio of the
+        smaller segment to the larger segment is equal to the ratio of the larger to the
+        whole. It is usually defined as 21:34, that is, 21/34 and 34/(21+34) both equal
+        approximately 0.618. A rectangle whose sides are of this proportion is called a
+        "golden rectangle". Golden rectangles can be found in the proportions of the
+        Parthenon and many medieval manuscripts.
+        </dd>
+      </dl>
+    </section>
+    <section>
+      <h2>Table</h2>
+      <table>
+        <colgroup>
+          <col style="width: 40px;"/> <!-- specify the column width on the col element if needed -->
+          <col />
+          <col />
+          <col />
+          <col />
+        </colgroup>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+            <th>Column 4</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1.</td>
+            <td>Data 1</td>
+            <td>Data 2</td>
+            <td>Data 3</td>
+            <td>Data 4</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>Data 1</td>
+            <td>Data 2</td>
+            <td>Data 3</td>
+            <td>Data 4</td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>Data 1</td>
+            <td>Data 2</td>
+            <td>Data 3</td>
+            <td>Data 4</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <h2>Form</h2>
+      <form action="/" method="POST" style="max-width: 500px;">
+        <fieldset>
+          <legend>Personal data</legend>
+          <div>
+            <label for="input-name">Name</label>
+            <input id="input-name" name="name" type="text" required placeholder="Homer Simpson">
+            <label for="input-email">Email</label>
+            <input id="input-email" name="email" type="email" required placeholder="homer@springfield.com">
+            <label for="input-number">Age</label>
+            <input id="input-number" name="age" type="number" required>
+            <label for="select-gender">Gender</label>
+            <select id="select-gender" name="email" required>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+            <label for="input-check">Accept privacy<br>rules</label>
+            <div>
+              <input id="input-check" type="checkbox" name="check" value="1" required />
+            </div>
+          </div>
+        </fieldset>
+        <div class="buttons">
+          <button type="reset">Reset</button>
+          <button type="submit" class="primary">Send</button>
+        </div>
+      </form>
+    </section>
+    <section>
+      <h2>Buttons</h2>
+      <button type="button">Button</button>
+      <button type="button" disabled>Disabled</button>
+      <button type="button" class="small">Small</button>
+      <button type="button" class="primary">Primary</button>
+    </section>
+    <section>
+      <h2>Box</h2>
+      <h3>Default</h3>
+      <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla repudiandae iure, tenetur eveniet eaque facilis inventore possimus dolores deserunt odio illum eos, ex laboriosam minima quisquam ipsa sequi. Eligendi, ea.</p>
+      </div>
+      <h3>Success</h3>
+      <div class="box success">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt ullam cumque impedit odio sint, alias a fugiat minus hic? Veniam libero a facilis facere, eum aperiam quibusdam in saepe sunt?</p>
+      </div>
+      <h3>Error</h3>
+      <div class="box error">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt ullam cumque impedit odio sint, alias a fugiat minus hic? Veniam libero a facilis facere, eum aperiam quibusdam in saepe sunt?</p>
+      </div>
+    </section>
+    <section>
+      <h2>Toggle</h2>
+      <div class="toggle-check">
+        <input id="toggle-button" type="checkbox" name="check" value="1" required aria-label="Toggle" />
+        <label for="toggle-button"></label>
+      </div>
+    </section>
+    <section>
+      <h2>Spinner</h2>
+      <div class="spinner"></div>
+    </section>
+  </main>
+  <footer>
+    <a class="copy" href="https://www.skillbill.it/" target="_blank" rel="noopener noreferrer">
+      <span>&copy; Skillbill 2020</span>
+      <img src="data:image/png;charset=utf-8;base64,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" alt="Skillbill logo">
+    </a>
+  </footer>
+</body>
+</html>
